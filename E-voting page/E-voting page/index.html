@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="contact-backg">
+                <div class="form-id">
+                    <form action="www.gmail.com" onsubmit="return validateForm()" method="post">
+                        <input type="text" id="input" placeholder="Enter Your Name" required><br>
+                        <input type="email" id="input" placeholder="Enter Your Email" required><br>
+                        <textarea placeholder="Enter Your Message"></textarea><br>
+                        <button id="btn" onclick="validateForm()">SUBMIT</button>
+                </div>
+                <div>
+                    <img src="images/—Pngtree—contact us_5412848.png" width="300px" height="250px">
+                </div>
+            </div>
+        </div>
+        <div class=" container2 ">
+            <div class=" ">
+                <h1>GET IN TOUCH</h1>
+                <P>Run a Smooth Fast & Secure election</P>
+                <p>...with your eyes live on the results as the votes come in.
+                    <br> On any device. From any where.</p>
+            </div>
+        </div>
+        <div class="contact-info ">
+            <h2>CALL US</h2>
+            <P>+2349069673760</P>
+            <P>+2349069673760</P>
+            <P>+2349069673760</P>
+            <h2>LOCATION</h2>
+            <P>Lasu Main Road Ojo
+                <br> Lagos, Nigeria</P>
+            <h2>BUSINESS HOURS</h2>
+            <P>Mon - Fri...... 10am - 8pm</P>
+            <P>Sat and Sun......Closed</P>
+        </div>
+    </main>
+
+    <script src="" type="text/js">
+        function validateForm(){ var btn = document.getElementById("btn").value; if(btn == ""){ alert("please enter a value in the text field") } else{alert("Successful!!!")} return false;}
+    </script>
+</body>
+
+</html>
