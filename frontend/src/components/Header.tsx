@@ -24,6 +24,10 @@ const Header: React.FC = () => {
                                         </svg>
                                 </div>
                         </section>
+
+                        <h2 className='Home_text_buttons'>WELCOME TO THE VAULT</h2>
+                        
+
                 </div>
         )
 }

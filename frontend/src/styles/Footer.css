@@ -3,3 +3,7 @@ footer {
         text-align: center;
         padding: 40px 0 40px 0;
 }
+.heading-secondary {
+        font-family: 'Cinzel', serif;
+        font-size: 1.35em;
+}
