@@ -1,0 +1,104 @@
+
+        .section_1 {
+                background: white;
+                /* height: 100vh; */
+                width: 100%;
+                /* margin-top: -40%; */
+                height: 300px;
+
+        }
+      .icon {
+        /* width: 100%;
+        max-width: 900px;
+        margin: 0 20px; */
+      }
+      .icon svg {
+        width: 20%;
+        margin: auto;
+        display: flex;
+      }
+      .icon #path1 {
+        fill: transparent;
+        stroke: crimson;
+        stroke-width: 1;
+        stroke-dasharray: 450;
+        stroke-dashoffset: 0;
+        animation: reveal 6s infinite linear both;
+      }
+      .icon #polygon1 {
+        fill: transparent;
+        stroke: crimson;
+        stroke-width: 1;
+        stroke-dasharray: 450;
+        stroke-dashoffset: 0;
+        animation: reveal 6s infinite linear both;
+      }
+      .icon #polygon2 {
+        fill: transparent;
+        stroke: crimson;
+        stroke-width: 1;
+        stroke-dasharray: 450;
+        stroke-dashoffset: 0;
+        animation: reveal 6s infinite linear both;
+      }
+      
+      .font {
+        position: absolute;
+        bottom: 30px;
+        margin: 0 20px;
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+      }
+      .font__link {
+        color: crimson;
+        text-decoration: none;
+      }
+      
+      @keyframes reveal {
+        0% {
+          fill: crimson;
+          stroke-dashoffset: 0;
+        }
+        20% {
+          fill: transparent;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          fill: transparent;
+          stroke-dashoffset: 450;
+        }
+        80% {
+          fill: transparent;
+          stroke-dashoffset: 900;
+        }
+        90% {
+          fill: crimson;
+          stroke-dashoffset: 900;
+        }
+        100% {
+          fill: crimson;
+          stroke-dashoffset: 900;
+        }
+      }
+
+
+
+
+
+
+/* media queries tablet */
+
+
+
+/* media queries phone */
+
+@media screen and (max-width: 780px) {
+        
+      .icon svg {
+        width: 60%;
+        margin: auto;
+        display: flex;
+      }
+}

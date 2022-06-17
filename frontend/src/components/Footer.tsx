@@ -6,7 +6,7 @@ import '../styles/social.css'
 const Footer:React.FC = () => {
         return (
                 <footer className='Footer'>
-                        <div className='heading-secondary' style={{ fontSize: '1.75em'}}>Feel free to connect </div>
+                        <div className='heading-secondary' style={{ fontSize: '1.75em'}}>Connect with us </div>
                         
                         <div className="hero">
                                 <div className="social-links">
