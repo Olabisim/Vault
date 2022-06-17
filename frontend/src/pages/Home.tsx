@@ -91,15 +91,15 @@ export const Home:React.FC = () => {
                                                 </Link>
                                         </div>
                                         <div>
-                                                <Link to="/voters/signup">
                                                 
                                                         <h4>CLICK TO LOGIN OR SIGN UP AS A CANDIDATE</h4>
-                                                </Link>
+                                                <Link to="/candidate/signup">
                                                 <button className="btn-31" onClick={() => console.log("clicked") }>
                                                         <span className="text-container">
                                                                 <span className="text">CANDIDATE</span>
                                                         </span>
                                                 </button>
+                                                </Link>
 
                                         </div>
                                 </div>
