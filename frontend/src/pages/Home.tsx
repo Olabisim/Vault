@@ -30,7 +30,7 @@ const stepsData: Stepsdata[] = [
 export const Home:React.FC = () => {
         return (
                 <div> 
-                        <Header />
+                        <Header title="WELCOME TO VAULT VOTE" />
 
                         <div className="Home_main">
 

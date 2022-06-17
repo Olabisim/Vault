@@ -1,7 +1,12 @@
 
 import '../styles/Header.css'
 
-const Header: React.FC = () => {
+
+interface propsdata {
+        title: String
+}
+
+const Header: React.FC<propsdata> = (props) => {
         return (
                 <div>
                         <section className="section_1">
@@ -25,7 +30,7 @@ const Header: React.FC = () => {
                                 </div>
                         </section>
 
-                        <h2 className='Home_text_buttons'>WELCOME TO THE VAULT</h2>
+                        <h2 className='Home_text_buttons'>{props.title}</h2>
                         
 
                 </div>

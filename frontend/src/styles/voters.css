@@ -1,0 +1,13 @@
+
+/* sign up page */
+.form input {
+        display: block;
+        margin: 35px auto;
+        padding: 17px;
+}
+.VotersLogin p {
+        text-align: center;
+}
+.bottom_info {
+        text-align: center;
+}
