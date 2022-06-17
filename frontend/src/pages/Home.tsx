@@ -1,4 +1,7 @@
 
+
+import { Link } from "react-router-dom"
+
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 
@@ -8,6 +11,7 @@ import '../styles/button.css'
 interface Stepsdata {
         title: String
 }
+
 
 
 const stepsData: Stepsdata[] = [
@@ -76,14 +80,21 @@ export const Home:React.FC = () => {
                                         
                                         <div>
                                                 <h4>CLICK TO LOGIN OR SIGN UP AS A VOTER</h4>
-                                                <button className="btn-31" onClick={() => console.log("clicked") }>
-                                                        <span className="text-container">
-                                                                <span className="text">VOTER</span>
-                                                        </span>
-                                                </button>
+                                                <Link to="/voters/login">
+
+                                                        <button className="btn-31" onClick={() => console.log("clicked") }>
+                                                                <span className="text-container">
+                                                                        <span className="text">VOTER</span>
+                                                                </span>
+                                                        </button>
+                                                
+                                                </Link>
                                         </div>
                                         <div>
-                                                <h4>CLICK TO LOGIN OR SIGN UP AS A CANDIDATE</h4>
+                                                <Link to="/voters/signup">
+                                                
+                                                        <h4>CLICK TO LOGIN OR SIGN UP AS A CANDIDATE</h4>
+                                                </Link>
                                                 <button className="btn-31" onClick={() => console.log("clicked") }>
                                                         <span className="text-container">
                                                                 <span className="text">CANDIDATE</span>

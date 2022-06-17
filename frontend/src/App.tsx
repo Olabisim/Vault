@@ -1,19 +1,30 @@
 
 import './App.css'
+
 import {Home} from './pages/Home'
 
 import {VotersSignup} from './pages/VotersSignup'
+import {VotersLogin} from './pages/VotersLogin'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 
 
 function App() {
 
 
         return (
-                <div>
+                
+                <Router>
+                        <Routes>
 
-                        <VotersSignup />
+                                <Route path="/" element={<Home />} /> 
 
-                </div>
+                                <Route path="/voters/signup" element={<VotersSignup />} /> 
+
+                                <Route path="/voters/login" element={<VotersLogin />} /> 
+
+                        </Routes>
+                </Router>
         )
 }
 

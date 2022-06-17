@@ -1,5 +1,6 @@
 
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import Header from "../components/Header"
 import '../styles/button.css'
 import '../styles/voters.css'
@@ -31,7 +32,10 @@ export const VotersLogin: React.FC = () => {
                                 </button>
                         </div>
 
-                        <p className="bottom_info"> not registered, please sign up</p>
+
+                        <Link to="/voters/signup">
+                                <p className="bottom_info"> not registered, please sign up</p>
+                        </Link>
                        
                 </div>
         )
